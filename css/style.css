@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'Asimovian';
+    src: url('../fonts/Asimovian-Regular.woff2') format('woff2'),
+        url('../fonts/Asimovian-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('..fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root {
+
+    --color-principal: #000624;
+    --color-oportunidades: #5EC480;
+    --color-text-especial: #E5734A;
+    --color-fondo: #F0F0F0;
+    --color-texto-claro: #FFFFFF;
+    --color-texto-oscuro: #004AAD;
+    /* Azul profundo sobre fondos claros */
+
+    --font-titulo: 'Montserrat', sans-serif;
+    --font-cuerpo: 'Open Sans', sans-serif;
+    --amplada-desktop: 1200px;
+    --titols: 'Asimovian', sans-serif;
+    --text-normal: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-normal);
+    font-size: 1.1rem;
+}
+
+body {
+
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    width: 100%;
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+
+    >div {
+        width: var(--amplada-desktop);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 3fr 2fr 3fr;
+        grid-template-rows: auto;
+        align-items: center;
+    }
+}
+
+nav {
+    width: 100%;
+    background-color: var(--color-principal);
+
+    ul {
+        width: var(--amplada-desktop);
+        margin: auto;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    li {
+        padding: 10px 5px;
+    }
+
+    a {
+        color: var(--color-texto-claro);
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px;
+    }
+}
+
+
+h1 {
+    font-size: 3rem;
+    font-family: var(--titols);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--color-principal);
+    margin-top: 2rem;
+
+    span {
+        color: var(--color-text-especial);
+        font-size: 3rem;
+    }
+
+}
+
+section {
+    width: var(--amplada-desktop);
+    margin: auto;
+    padding: 20px 0;
+    margin: 1rem auto;
+}
+
+.titol-alumnes,
+.curs-descripcio,
+.activitat-1,
+.producto-final,
+.recursos,
+.evaluacion,
+.annexos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    p {
+        margin: 1rem 0;
+    }
+
+    li {
+        margin: 0.5rem 0;
+
+    }
+
+    figure {
+        margin: 2rem 0;
+    }
+
+    strong {
+        color: var(--color-text-especial);
+    }
+}
+
+.italic {
+    font-style: italic;
+}
+
+.emfasi {
+    padding: 1rem;
+    background-color: var(--color-principal);
+    color: var(--color-texto-claro);
+    border: 1px solid #555;
+    border-radius: 1rem;;
+}
+
+.rubrica {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    div {
+        background-color: var(--color-fondo);
+        padding: 2rem;
+        border: 2px solid #ccc;
+        border-radius: 1rem;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+
+    td,
+    th {
+        border: 1px solid #555;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.annexos {
+    img {
+        margin: 1rem 0;
+    }
+
+    div {
+        margin: 2rem 0;
+    }
+
+    p {
+        margin: 0rem 0 1rem;
+    }
+}
+
+footer {
+    background-color: var(--color-principal);
+    padding: 1rem 0;
+
+    .peu {
+        width: var(--amplada-desktop);
+        margin: 3rem auto;
+        display: flex;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .licence {
+        display: flex;
+        align-items: center;
+        font-size: 0.9rem;
+        opacity: 0.8;
+        gap: 1rem;
+        color: var(--color-texto-claro);
+
+        a {
+            color: var(--color-texto-claro);
+            text-decoration: underline;
+        }
+    }
+
+    .ori-imatges {
+        color: var(--color-texto-claro);
+        font-size: 0.9rem;
+        opacity: 0.8;
+        text-align: right;
+    }
+
+    .author {
+
+        opacity: 0.8;
+        text-align: center;
+    }
+
+    h4 {
+        color: #fff;
+    }
+}
