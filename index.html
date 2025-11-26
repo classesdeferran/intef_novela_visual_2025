@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escape room!</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <!-- <link rel="shortcut icon" href="img/brain.jpg" type="image/x-icon" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
@@ -36,7 +36,10 @@
         <li><a href="#evaluacio">Evaluación</a></li>
         <li><a href="#annexos">Anexos</a></li>
       </ul>
-      <p>Lee el texto o mira el <input id="videoResumen" type="button" value="video-resumen"> </p>
+      <p>
+        Lee el texto o mira el
+        <input id="videoResumen" type="button" value="video-resumen" />
+      </p>
     </nav>
     <main>
       <section class="titol-alumnes">
@@ -57,10 +60,15 @@
           <div id="alumnes">
             <h3>Perfil del alumnado</h3>
             <p>
-              Legalmente, a partir de 16 años, pero es raro que haya menores de
-              20. En la práctica la media está entre 30 y 35. La mayoría no han
-              programado antes o quizá lo han hecho de forma autodidacta, aunque
-              también suele haber algún alumno con buena base inicial.
+              Son <strong>adultos</strong>. Legalmente se pueden realizar estos cursos a partir de
+              16 años, pero es raro que haya menores de 20. En la práctica la
+              media está entre 30 y 35, así que a menudo presentan complejas cargas
+              familiares. 
+              </p>
+              <p>
+              La mayoría no han programado antes o
+              quizá lo han hecho de forma autodidacta, aunque también suele
+              haber algún alumno con buena base inicial.
             </p>
           </div>
         </div>
@@ -77,11 +85,14 @@
           <div id="curs">
             <h3>Curso y materia</h3>
             <p>
-              UF1842 “Desarrollo y reutilización de componentes software y
-              multimedia mediante lenguajes de guión”, dentro del Certificado de
-              profesionalidad IFCD0210 “Desarrollo de aplicaciones con
-              tecnologías web”. El contenido de la unidad formativa es el
-              aprendizaje del lenguaje de programación Javascript desde cero.
+              UF1842
+              <strong
+                >“Desarrollo y reutilización de componentes software y
+                multimedia mediante lenguajes de guión”</strong
+              >, dentro del Certificado de profesionalidad IFCD0210
+              <strong>“Desarrollo de aplicaciones con tecnologías web”</strong>.
+              El contenido de la unidad formativa es el aprendizaje del lenguaje
+              de programación Javascript desde cero.
             </p>
           </div>
           <div id="descripcio">
@@ -142,8 +153,9 @@
               </li>
               <li>
                 Entrega de un <strong>informe con el proceso seguido</strong>,
-                incluyendo explicaciones, capturas de pantalla, fotografías y <em>prompts</em> (el
-                <em>making-off</em>, lo más completo posible).
+                incluyendo explicaciones, capturas de pantalla, fotografías y
+                <em>prompts</em> (el <em>making-off</em>, lo más completo
+                posible).
               </li>
               <li>
                 <strong>Comentar constructivamente</strong> el trabajo de otro
@@ -174,15 +186,15 @@
             <figcaption>Figura 2: Imagen generada con Gemini 3.0.</figcaption>
           </figure>
           <p>Prompt utilizado para generar las imágenes:</p>
-          <p class="italic"
-            >"Crea una imagen para una escena de una novela visual, estilo manga
+          <p class="italic">
+            "Crea una imagen para una escena de una novela visual, estilo manga
             a color. En el fondo aparece una aula moderna para adultos. En
             primer plano un hombre y una mujer de unos 25 años. Él parece
             sorprendido. En la parte inferior, en un recuadro con transparencia,
             esta pregunta: ¿Qué palabra clave utilizamos para crear una variable
             en Javascript? Debajo habrá cuatro opciones: int, let, def, string.
-            Tamaño de la imagen: 1920 por 1080 píxeles."</p
-          >
+            Tamaño de la imagen: 1920 por 1080 píxeles."
+          </p>
         </div>
       </section>
       <section class="recursos">
@@ -204,11 +216,17 @@
           </p>
           <p>
             El centro educativo ofrece la infraestructura necesaria (ordenadores
-            y acceso a internet), pero corre a cargo de los alumnos elegir la
-            mejor inteligencia artificial según la necesidad y producir con ella
-            las imágenes, sonidos y hasta el código necesario, aunque se exigirá
-            que lo supervisen y rectifiquen que es necesario (con lo cual
-            descubrirán que no es tan fácil crear buen código con la IA).
+            y acceso a internet), pero a partir de aquí todo corre a cargo de
+            los alumnos: elegir la mejor inteligencia artificial según la
+            necesidad, producir con ella las imágenes, sonidos y hasta crear el
+            código, aunque se exigirá que lo supervisen y rectifiquen si es
+            necesario (con lo cual descubrirán que no es tan fácil crear buen
+            código con la IA).
+          </p>
+          <p>
+            <strong>Se trata de promover al máximo la autonomía de los alumnos</strong>,
+            habilidad imprescindible en un entorno que cambia tan rápidamente
+            como la programación.
           </p>
         </div>
       </section>
@@ -583,10 +601,17 @@
     </main>
     <!-- Modal de vídeo -->
     <div id="videoModal" class="modal" hidden>
-      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-        <button id="videoClose" class="modal-close" aria-label="Cerrar">Cerrar</button>
+      <div
+        class="modal-content"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button id="videoClose" class="modal-close" aria-label="Cerrar">
+          Cerrar
+        </button>
         <video id="modalVideo" controls>
-          <source src="assets/Stranger_Strings.mp4" type="video/mp4">
+          <source src="assets/Stranger_Strings.mp4" type="video/mp4" />
           Tu navegador no soporta la etiqueta video.
         </video>
       </div>
