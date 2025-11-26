@@ -76,10 +76,20 @@ nav {
         display: flex;
         justify-content: space-between;
         gap: 15px;
+
+
     }
 
     li {
         padding: 10px 5px;
+        border-bottom: 5px solid transparent;
+
+        &:hover {
+            background-color: var(--color-texto-oscuro);
+            border-bottom: 5px solid var(--color-text-especial);
+
+        }
+
     }
 
     a {
@@ -87,6 +97,11 @@ nav {
         text-decoration: none;
         font-weight: bold;
         padding: 10px;
+    }
+
+    p {
+        text-align: center;
+        color: var(--color-texto-claro);
     }
 }
 
@@ -160,7 +175,8 @@ section {
     background-color: var(--color-principal);
     color: var(--color-texto-claro);
     border: 1px solid #555;
-    border-radius: 1rem;;
+    border-radius: 1rem;
+    ;
 }
 
 .rubrica {
@@ -245,4 +261,49 @@ footer {
     h4 {
         color: #fff;
     }
+}
+
+/* Modal de vídeo */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.65);
+    z-index: 9999;
+}
+
+.modal[hidden] {
+    display: none;
+}
+
+.modal-content {
+    background: transparent;
+    padding: 12px;
+    border-radius: 6px;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: auto; /* permite ver el vídeo a tamaño real incluso si es mayor que la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255,255,255,0.9);
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    z-index: 10000;
+}
+
+.modal-content video {
+    display: block;
+    width: auto; /* tamaño real */
+    height: auto; /* tamaño real */
 }

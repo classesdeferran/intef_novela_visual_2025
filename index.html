@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escape room!</title>
-    <link rel="shortcut icon" href="img/brain.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="img/brain.jpg" type="image/x-icon" /> -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/script.js" defer></script>
   </head>
@@ -35,6 +36,7 @@
         <li><a href="#evaluacio">Evaluación</a></li>
         <li><a href="#annexos">Anexos</a></li>
       </ul>
+      <p>Lee el texto o mira el <input id="videoResumen" type="button" value="video-resumen"> </p>
     </nav>
     <main>
       <section class="titol-alumnes">
@@ -579,6 +581,16 @@
         </div>
       </section>
     </main>
+    <!-- Modal de vídeo -->
+    <div id="videoModal" class="modal" hidden>
+      <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button id="videoClose" class="modal-close" aria-label="Cerrar">Cerrar</button>
+        <video id="modalVideo" controls>
+          <source src="assets/Stranger_Strings.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta video.
+        </video>
+      </div>
+    </div>
     <footer>
       <div class="peu">
         <div class="licence">
